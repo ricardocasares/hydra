@@ -23,3 +23,6 @@ smt = (n) => a.setSmooth(n);
 tan = () => Math.tan(a.fft[0]);
 sin = () => Math.sin(a.fft[0]);
 cos = () => Math.cos(a.fft[0]);
+r = () => Math.tan(Math.PI * a.fft[0]);
+g = () => Math.sin(Math.PI * a.fft[4]);
+b = () => Math.sin(Math.PI * a.fft[2]);
