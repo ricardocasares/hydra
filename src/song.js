@@ -1,1 +1,1 @@
-import "./songs/bielsko";
+import "./songs/detonados";
