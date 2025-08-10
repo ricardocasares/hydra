@@ -1,7 +1,7 @@
 v0("climax");
 cut(-2);
 smt(0.99);
-bp(120);
+bp(112);
 
 src(s0)
   .saturate(0)

@@ -26,6 +26,7 @@ export const y = () => [1, 1, 0];
 // pixelate
 export const px = (x) => [x, x];
 // audio fns
+export const show = (b) => (b ? a.show() : a.hide());
 export const bp = (n) => (bpm = n);
 export const cut = (n) => a.setCutoff(n);
 export const smt = (n) => a.setSmooth(n);
@@ -42,6 +43,7 @@ export const lo = () => 1 / (a.fft[0] || 1);
 export const mid = () => 1 / (a.fft[1] || 1);
 export const hi = () => 1 / (a.fft[3] || 1);
 // utils
+export const t = () => time;
 export const neg = (n) => n * -1;
 export function range(a, b, step = 1) {
   if (step < 1) step = 1;
