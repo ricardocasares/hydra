@@ -43,10 +43,11 @@ export const lo = () => 1 / (a.fft[0] || 1);
 export const mid = () => 1 / (a.fft[1] || 1);
 export const hi = () => 1 / (a.fft[3] || 1);
 // utils
+export const pi = (n = 1) => Math.PI * n;
 export const t = () => time;
 export const neg = (n) => n * -1;
 export function range(a, b, step = 1) {
-  if (step < 1) step = 1;
+  if (step < 0.1) step = 1;
 
   const length = Math.floor((b - a) / step) + 1;
   return Array.from(
