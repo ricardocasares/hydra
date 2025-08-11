@@ -55,8 +55,37 @@ This guide provides essential instructions for using GitHub Copilot with the Hyd
 osc(10, 0.1, 1.2).rotate(0.2, 0.1).color(1, 0.5, 0.2).out();
 ```
 
+## Other functions
+
+Other functions are available inside `./src/lib/fns.js`
+Make sure to read the comments for each function when you use them.
+
+You can use functions inside some Hydra elements, for example:
+
+```js
+osc(lo, mid, hi).out();
+```
+
+Or, what is equivalent:
+
+```js
+osc(
+  () => lo(),
+  () => mid(),
+  () => hi()
+).out();
+```
+
+Critical: Avoid doing math operations on the functions itself!
+
 ## Tips for Copilot
 
 - Use function chaining for complex visuals.
 - Experiment with parameters for unique effects.
 - Reference the [Hydra API](https://hydra.ojack.xyz/api/) for all available functions and options.
+
+## Creating new visuals
+
+- You can use videos from /public folder
+- Make sure the video is not used in another song
+- Create sections that can be commented out to change the visual vibe
