@@ -36,8 +36,6 @@ export const mid = () => 1 / (a.fft[1] || 1);
 export const hi = () => 1 / (a.fft[3] || 1);
 export const pi = (n = 1) => Math.PI * n;
 export const t = () => time;
-export const t2 = () => time / 2;
-export const t4 = () => time / 4;
 export const neg = (n) => n * -1;
 export function range(a, b, step = 1) {
   if (step < 0.1) step = 1;

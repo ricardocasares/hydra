@@ -4,15 +4,15 @@ smt(0.4);
 bp(122);
 show(1);
 
-src(s0)
-  .saturate(0)
-  .color(r, ntan, sin)
-  .posterize(lo, mid)
-  .modulateScale(osc(hi, 0, tan).thresh())
-  .pixelate(px(200 - lo() * 150))
-  .kaleid([2, 4, 6])
-  .rotate(() => t() * 0.1)
-  .out();
+// src(s0)
+//   .saturate(0)
+//   .color(r, ntan, sin)
+//   .posterize(lo, mid)
+//   .modulateScale(osc(hi, 0, tan).thresh())
+//   .pixelate(px(200 - lo() * 150))
+//   .kaleid([2, 4, 6])
+//   .rotate(() => t() * 0.1)
+//   .out();
 
 // osc(100, tan, hi)
 //   .thresh(0.5)
@@ -33,15 +33,6 @@ src(s0)
 //   .mask(shape([3, 4, 6, 8], 0.5, tan))
 //   .out();
 
-// voronoi(() => lo * 10, hi, mid)
-//   .color(r, g, b)
-//   .modulateScale(osc(tan, 0, sin))
-//   .blend(src(s0).saturate(0).invert())
-//   .kaleid(range(1, 16))
-//   .rotate(() => time * 0.3)
-//   .scale(cos, sin)
-//   .out();
-
 // solid(r, g, b)
 //   .add(osc(hi, tan, mid).thresh().kaleid(8))
 //   .modulate(noise(cos, sin), 0.5)
@@ -50,11 +41,10 @@ src(s0)
 //   .rotate(() => t() * -0.15)
 //   .out();
 
-// Section 6: Minimal Power Build
-// shape([4, 6, 8], 0.3, lo)
-//   .color(r, 0, tan)
-//   .repeat(lo, hi)
-//   .modulateRotate(osc(mid).thresh())
-//   .scale(sin, cos)
-//   .add(src(s0).saturate(0).thresh())
-//   .out();
+shape([4, 6, 8], 0.3, lo)
+  .color(r, 0, tan)
+  .repeat(lo, hi)
+  .modulateRotate(osc(mid).thresh())
+  .scale(sin, cos)
+  .add(src(s0).saturate(0).thresh())
+  .out();
