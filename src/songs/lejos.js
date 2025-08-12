@@ -11,6 +11,6 @@ src(s0)
       .scale(lo)
       .modulate(osc(Math.PI * 20, 2).thresh())
   )
-  .kaleid([2, 50, 10])
-  .rotate(t)
+  // .kaleid([2, 50, 10])
+  // .rotate(t)
   .out();
