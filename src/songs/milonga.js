@@ -19,8 +19,8 @@ shape([1, 2, 3, 4])
   )
   // .sub(
   // src(o0)
-  .modulateKaleid(osc([10, 20, 30]))
-  .kaleid(20)
-  .rotate(() => time)
+  // .modulateKaleid(osc([10, 20, 30]))
+  // .kaleid(20)
+  // .rotate(() => time)
   // )
   .out();
