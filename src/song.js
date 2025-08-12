@@ -1,1 +1,1 @@
-import "./songs/power";
+import "./songs/intro";

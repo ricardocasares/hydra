@@ -45,6 +45,8 @@ export const hi = () => 1 / (a.fft[3] || 1); // Inverse of high frequency
 // utils
 export const pi = (n = 1) => Math.PI * n; // Return PI multiplied by n (default 1)
 export const t = () => time; // Return current time
+export const t2 = () => time / 2; // Return current time /2
+export const t4 = () => time / 4; // Return current time /4
 export const neg = (n) => n * -1; // Return negative value of n
 export function range(a, b, step = 1) {
   // Generate array of numbers from a to b with step
