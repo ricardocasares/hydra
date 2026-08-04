@@ -1,1 +1,1 @@
-import "./songs/09_lejos";
+import "./songs/07_peregrino";

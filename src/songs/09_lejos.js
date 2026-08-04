@@ -3,6 +3,8 @@ cut(2);
 smt(0.5);
 bp(120);
 
+show(1);
+
 // seek0(250)
 
 src(s0)
