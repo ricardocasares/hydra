@@ -1,1 +1,1 @@
-import "./songs/07_peregrino";
+import "./songs/10_oblivion";
