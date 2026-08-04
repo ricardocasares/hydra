@@ -4,7 +4,7 @@ show(1);
 cut(-2);
 smt(0)
 
-seek0(100)
+// seek0(0)
 
 src(s0)
     .saturate(0)
