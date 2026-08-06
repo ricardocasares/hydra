@@ -1,13 +1,12 @@
 v0("tram");
-cam1(0)
-cut(-2);
+cut(0);
 smt(.9);
 bp(112);
 show(1);
 
 // seek0(0);
 
-src(s1)
+src(s0)
   .saturate(0)
   .color(nsin, tan, ntan)
   .posterize(10, 4)
