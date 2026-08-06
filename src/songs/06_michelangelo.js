@@ -7,9 +7,9 @@ smt(0.5)
 // seek0(0)
 
 src(s0)
-    // .invert()
+    .invert()
     .saturate(0)
-    .posterize(100, 4)
+    .posterize(10, 3)
     .color([0,1,1].ease(), [1,0,1].ease(), [1,1,0].ease())
-    .scale([1,2,1,3])
+    // .scale([1,2,1,3])
     .out();
