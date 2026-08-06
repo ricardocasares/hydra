@@ -8,9 +8,10 @@ smt(0.5)
 
 src(s0)
     .invert()
+    .contrast(tan)
     .saturate(0)
     .contrast(4)
     .posterize(10, 4)
     .color([0,1,1].ease(), [1,0,1].ease(), [1,1,0].ease())
-    // .modulateScale(osc(.3,1), rip)
+    // .modulateScale(osc(2, .5), rip)
     .out();
