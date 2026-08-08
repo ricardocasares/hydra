@@ -12,5 +12,7 @@ src(s0)
     .posterize(10, 1)
     .color([0,1,1].ease(), [1,0,1].ease(), [1,1,0].ease())
     // .mask(shape([2,3,4]).modulate(src(s0)).modulateScale(osc(rip, tan)))
+    .kaleid([2,3,4,5])
     // .scale([1,2,1,3])
+    // .rotate(t)
     .out();

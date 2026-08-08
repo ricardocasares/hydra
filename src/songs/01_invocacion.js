@@ -5,7 +5,7 @@
 
 v0("invocacion");
 bp(102);
-cut(-2);
+cut(-4);
 smt(0.5);
 show(1);
 // seek0(0);
@@ -16,8 +16,8 @@ show(1);
 src(s0)
     // .brightness(10)
     .contrast(tan)
-    // .invert()
-    .posterize(1, 10)
+    .invert()
+    // .posterize(1, 10)
     .saturate(0)
     .color([0, 1, 1], [1, 0, 1], [1, 1, 0])
     // .mask(shape([2, 3]).modulateScale(noise(0,[1, 0, 3, 100])))
@@ -26,9 +26,9 @@ src(s0)
     // .modulatePixelate(osc(lo, .5))
     .modulateScale(voronoi(rip,.2))
     .modulateRotate(noise(rip, () => t))
-    // .modulateRepeat(voronoi(rip, 1))
-    // .repeat(2)
-    // .kaleid([3,4, 6, 10])
+    .modulateRepeat(voronoi(rip, 1))
+    .repeat(2)
+    .kaleid([3,4, 6, 10])
     // .scale([1,1,1,3])
     // .kaleid(0)
     // .modulateScrollX(osc(rip,1))

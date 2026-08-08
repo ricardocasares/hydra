@@ -1,6 +1,6 @@
 v0('michelangelo');
 bp(111);
-show(1);
+show(0);
 cut(-2);
 smt(0.5)
 
@@ -13,6 +13,6 @@ src(s0)
     // .pixelate([1920,1920])
     .color([0,1,1].ease(), [1,0,1].ease(), [1,1,0].ease())
     .scale([1,2,1,3])
-    // .kaleid(2)
-    // .rotate(t)
+    .kaleid(2)
+    .rotate(t)
     .out();

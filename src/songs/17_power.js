@@ -2,8 +2,10 @@ v0("krk");
 bp(122);
 show(1);
 
-cut(0)
+cut(3)
 smt(0.86)
+
+// seek0(40)
 
 // Powers suppress room noise and make kicks, snares, and hats hit harder.
 const audioPower = (bin, exponent, gain = 1) => () =>
@@ -57,8 +59,14 @@ solid(0, 0, )
   .layer(cyan())
   .layer(magenta())
   .layer(yellow())
+  // .mask(
+  //   shape([2, 3, 4, 884])
+  //     .scale(lo)
+  //     .modulate(osc(Math.PI * 8, .2).thresh())
+  // )
   // .layer(black())
-  // .mask(shape([2,3,4]).blend(s0).modulateScale(osc(0,.3)))
+  // .mask(shape([2,3,4]).modulateScale(osc(0,.3)))
+  // .repeat(4)
   // .rotate(t)
-  // .kaleid([1,2,3,4,5,6])
+  // .kaleid([1,2,3,4,5])
   .out();

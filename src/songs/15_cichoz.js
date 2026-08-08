@@ -13,4 +13,6 @@ src(s0)
     .color([0,1,1].ease(), [1,0,1].ease(), [1,1,0].ease())
     .scale([1,1,1,3].smooth())
     // .modulateScale(osc(bass, 0))
+    .repeat(4)
+    .kaleid([2,4,6,10])
     .out();
